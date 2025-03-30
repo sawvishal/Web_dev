@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selector Example</title>
+    <style>
+      /* 1. Universal Selector */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Type Selector */
+      p {
+        font-size: 16px;
+        margin: 10px 20px 15px 20px;
+        padding: 1px 2px 3px 4px;
+        /* margin-bottom: 10px; */
+      }
+
+      /* 3. Class Selector */
+      .highlight {
+        background-color: #4b5fc0;
+      }
+
+      /* 4. ID selector */
+      #header {
+        background-color: red;
+      }
+
+      /* 5. Attribute selector */
+      input[type="text"] {
+        border: 10px solid #4b5fc0;
+      }
+
+      /* 6. Decedent Selector (Decendent can also be called as GrandChild) */
+      article p {
+        font-style: italic;
+        background-color: #1a11a1;
+        color: #fff;
+        padding: 10px;
+      }
+
+      /* 7. Child Selector */
+      ul > li {
+        list-style-type: square;
+        background-color: orange;
+      }
+
+      /* div > p {
+        background-color: red;
+      } */
+
+      /* 8. Adjacent Sibling Selector */
+      h1 + p {
+        font-weight: bold;
+      }
+
+      /* 9.General Sibling Selector */
+      h2 ~ p {
+        color: yellow;
+
+        /* 10. Pseudo-Class Selector  */
+        a:hover {
+          background-color: green;
+          text-decoration: none;
+          color: #1a11a1;
+          padding: 5px;
+          margin: 4px;
+        }
+
+        /* pseudo-element Selector */
+        p::first-letter {
+          font-weight: bold;
+          font-size: 30px;
+        }
+
+        /* Grouping of the selector */
+
+        h1,
+        h2,
+        h3 {
+          color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
